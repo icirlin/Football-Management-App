@@ -1,0 +1,26 @@
+Procedures(All completed Procedures have the Word "Done" at the end):
+
+setPlayer(playerId, active, jersey, lName, fName, displayName, team, position,
+height, weight, D.O.B.,college)      Done
+
+setTeam(code, fullName, shortName,)   Done
+
+setBye(team, byeWeek, displayName) Done
+
+setGameDay(gameId, gameWeek, gameDate, awayTeam, homeTeam, gameTimeET,
+tvStation, winner)
+
+setInjury(week, playerId, PlayerName, team, position, injury, practiceStatus,
+gameStatus, notes, lastUpdate, practiceStatusId)
+
+setWeather(gameId, gameWeek, gameDate, awayTeam, homeTeam, gameTimeET,
+tvStation, winner, stadium, isDome, geoLat, geoLong, low, high, forcast,
+ windChill, windSpeed, domeImg, smallImg, mediumImg, largeImg)
+
+setAuction(playerId, ppr, minPrice, maxPrice, avgPrice, displayName, team,
+ position)
+
+setDraftRanking(playerId, position, displayName, fName, lName, team, byeWeek,
+ nerdRank, positionRank, overallRank)
+ 
+ 

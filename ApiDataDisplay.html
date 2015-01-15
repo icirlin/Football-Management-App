@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Api Data</title>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.my_button').click(function() {
+                    var buttonValue = $(this).attr("value");
+                    
+                    $.ajax({
+                        url: 'api-data-collection.php?action=getJson&service_name=' + buttonValue, success: function (response) {
+                        document.getElementById("apiTable").innerHTML = JSON.stringify(JSON.parse(response), null, "\t");
+                        }
+                    });
+                });
+            });
+        </script>
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.db_button').click(function() {
+                    var buttonValue = $(this).attr("value");
+                    
+                    $.ajax({
+                        url: 'database-manager.php', success: function (response) {
+                        document.getElementById("apiTable").innerHTML = response;
+                        }
+                    });
+                });
+            });
+        </script>
+        
+    </head>
+    <body>
+        <button class="my_button" value="nfl-teams">nfl-teams</button>
+        <button class="my_button" value="schedule">schedule</button>
+        <button class="my_button" value="players">players</button>
+        <button class="my_button" value="byes">byes</button>
+        <button class="my_button" value="injuries">injuries</button>
+        <button class="my_button" value="weather">weather</button>
+        <button class="my_button" value="auction">auction</button>
+        <button class="my_button" value="draft-rankings">draft-rankings</button>
+        <button class="my_button" value="draft-projections">draft-projections</button>
+        <button class="my_button" value="weekly-rankings">weekly-rankings</button>
+        <button class="my_button" value="weekly-projections">weekly-projections</button>
+        <button class="my_button" value="defense-rankings">defense-rankings</button>
+        <button class="my_button" value="depth-charts">depth-charts</button>
+        <button class="my_button" value="inactives">inactives</button>
+        <button class="my_button" value="player">player</button>
+        <button class="db_button" value="player">SHOW PLAYERS</button>
+        
+        <pre id="apiTable"></pre>
+    </body>
+    
+</html>

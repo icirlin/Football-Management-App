@@ -1,0 +1,93 @@
+Formating of database
+
+Due to the nature of stats, tables for each position will need to be made.
+So there is a big table for all of the players. This will have columns for the
+following:
+Name
+Team Name
+Jersey Number
+Postion
+STD
+PPR
+
+There is a table for Teams that has columns for the following:
+Team Name
+Conference (AFC or NFC)
+Region (North, South, East, West)
+
+There is a table for only Quarter Backs that has columns for the following:
+Name
+Team Name
+Pass Yds
+Pass TD
+Rush Yds
+Rush TD
+Inter(Will be noted as "int" the API, needs to change because of sql formating)
+Fmb
+STD
+PPR
+
+There is a table for only Running Backs
+Name
+Team Name
+Rush Yds
+Rush TD
+Recs
+Recs Yds
+Recs TD
+Fmb
+STD
+PPR
+
+There is a table for only Wide Receivers
+Name
+Team Name
+Rush Yds
+Rush TD
+Recs
+Recs Yds
+Recs TD
+Fmb
+STD
+PPR
+
+Table for Tight Ends
+Name
+Team Name
+Rush Yds
+Rush TD
+Recs
+Recs Yds
+Recs TD
+Fmb
+STD
+PPR
+
+Table for Kickers
+Name
+Team Name
+FG Att
+FG Made
+XP Att
+XP Made
+STD
+PPR
+
+Procedures that need to be created:
+setPlayer
+dropPlayer
+
+setKickers
+dropKickers
+
+setQuarterBacks
+dropQuarterBacks
+
+setRunningBacks
+dropRunningBacks
+
+setWideReceivers
+dropWideReceivers
+
+setTightEnds
+dropTightEnds

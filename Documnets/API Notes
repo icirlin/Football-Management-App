@@ -1,0 +1,135 @@
+ /***************************
+ * NFL Teams
+ * 
+ * Get a list of the NFL teams and their codes
+ * URL Structure: /service/{SERVICE-NAME}/{FORMAT}/{API-KEY}/
+ **************************/
+ /***************************
+ * NFL Schedule
+ * 
+ * Retrieve the 2014 NFL Schedule
+ * 
+ * URL Structure: /service/{SERVICE-NAME}/{FORMAT}/{API-KEY}/
+ **************************/
+ /***************************
+ * NFL Players
+ * 
+ * Get a list of all fantasy players from FFN
+ * You can optionally request a specific position: QB, RB, WR, TE, K, DEF to return only ACTIVE players among that position. Leave the position parameter empty to retrieve all players including inactive players.
+ * 
+ * URL Structure: /service/{SERVICE-NAME}/{FORMAT}/{API-KEY}/{position}/
+ *      {position}: Example: QB (position to retrieve)
+ **************************/
+ /***************************
+ * Bye Weeks
+ * 
+ * Get a list of the teams and their bye weeks
+ * 
+ * URL Structure: /service/{SERVICE-NAME}/{FORMAT}/{API-KEY}/
+ **************************/
+ /***************************
+ * Injuries
+ * 
+ * Retrieve the injury reports for each team
+ * 
+ * You can pass along a week number (1-17) to retrieve injuries for a specific week. Leave blank to retrieve injuries for the current week.
+ * 
+ * URL Structure: /service/{SERVICE-NAME}/{FORMAT}/{API-KEY}/{week}/
+ *      {week}: Example: 1 (The week *1-17* to retrieve. Leave empty for the current week.)
+ **************************/
+ /***************************
+ * Weather Forecasts
+ * 
+ * Get the game day weather forecast for the current week's games
+ * 
+ * This will provide weather forecasts for each NFL game generally within 5 days of kickoff.
+ * 
+ * URL Structure: /service/{SERVICE-NAME}/{FORMAT}/{API-KEY}/
+ **************************/
+ /***************************
+  * Auction Values
+  * 
+  * Get a list of fantasy auction values
+  * 
+  * Pass along a PPR indicator ("ppr" or "1") to receive PPR auction rankings
+  * 
+  * URL Structure: /service/{SERVICE-NAME}/{FORMAT}/{API-KEY}/{ppr}/
+  *     {ppr}: Example: ppr (PPR Indicator. 1 for yes, 0 or empty for no)
+ **************************/
+ /***************************
+ * Draft Rankings
+ * 
+ * Get a list of draft rankings (Both PPR and Standard)
+ * 
+ * You will need to pass along a "1" for PPR or leave empty (or zero) for standard rankings
+ * 
+ * URL Structure: /service/{SERVICE-NAME}/{FORMAT}/{API-KEY}/{ppr}/
+ *      {ppr}: Example: 1 (PPR Indicator. 1 for yes, 0 or empty for no)
+ **************************/
+ /***************************
+ * Draft Projections
+ * 
+ * Get draft projections for the 2014 NFL season
+ * 
+ * You will need to request a specific position: QB, RB, WR, TE, DEF, K
+ * 
+ * URL Structure: /service/{SERVICE-NAME}/{FORMAT}/{API-KEY}/{position}/
+ *      {position}: Example: QB (position to retrieve)
+ **************************/
+ /***************************
+ * Weekly Rankings
+ * 
+ * Get the weekly rankings (Both PPR and Standard)
+ * 
+ * You will need to request a specific position: QB, RB, WR, TE, K, DEF. You will also need to send along the specific week number (1-17) you'd like as well. You can optionally send along a "1" if you'd like PPR results returned.
+ * 
+ * URL Structure: /service/{SERVICE-NAME}/{FORMAT}/{API-KEY}/{position}/{week}/{ppr}/
+ *      {position}: Example: QB (position to retrieve)
+ *      {week}: Example: 2 (The week *1-17* to retrieve. Leave empty for the current week.)
+ *      {ppr}: Example: 1 (PPR Indicator. 1 for yes, 0 or empty for no)
+ **************************/
+ /***************************
+ * Weekly Projections
+ * 
+ * Get the weekly projections for each player
+ * 
+ * You will need to request a specific position: QB, RB, WR, TE, K, DEF. Additionally, you can optionally request a specific week number (1-17). If you don't request a specific week, the current week will be returned.
+ * 
+ * URL Structure: /service/{SERVICE-NAME}/{FORMAT}/{API-KEY}/{position}/{week}/
+ *      {position}: Example: QB (position to retrieve)
+ *      {week}: Example: 1 (The week *1-17* to retrieve. Leave empty for the current week.)
+ **************************/
+ /***************************
+ * Defensive Rankings
+ * 
+ * Get the defensive rankings for each team
+ * 
+ * URL Structure: /service/{SERVICE-NAME}/{FORMAT}/{API-KEY}/
+ **************************/
+ /***************************
+ * Depth Charts
+ * 
+ * Get the depth charts for each team
+ * 
+ * URL Structure: /service/{SERVICE-NAME}/{FORMAT}/{API-KEY}/
+ **************************/
+ /***************************
+ * Game Day Inactives
+ * 
+ * Get the list of game day inactives for key players
+ * 
+ * You can pass along a week number (1-17) to retrieve a specific week. Leave blank to retrieve game day inactives for the current week.
+ * 
+ * URL Structure: /service/{SERVICE-NAME}/{FORMAT}/{API-KEY}/{week}/
+ *      {week}: Example: 1 (The week *1-17* to retrieve. Leave empty for the current week.)
+ **************************/
+ /***************************
+ * Player Stats & Info
+ * 
+ * Get the historical stats and info for each player
+ * 
+ * You will need to pass along the playerId of the player you want.
+ * 
+ * URL Structure: /service/{SERVICE-NAME}/{FORMAT}/{API-KEY}/{playerId}/
+ *      {playerId}: Example: 13 (playerId of the player to retrieve)
+ **************************/
